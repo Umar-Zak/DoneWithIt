@@ -9,14 +9,14 @@ import ListItemDeleteAction from "./../../component/list-item-delete-action";
 const initialMessages = [
   {
     id: 1,
-    title: "d1",
-    description: "D1",
+    title: "Umar Zak",
+    description: "Hey dude, can we have chat about your desk posted?",
     image: require("../../assets/mosh.jpg"),
   },
   {
     id: 2,
-    title: "f1",
-    description: "f2",
+    title: "Mark",
+    description: "That's a nice couch right there. Any discount available?",
     image: require("../../assets/mosh.jpg"),
   },
 ];
@@ -37,6 +37,7 @@ const MessagesScreen = () => {
             image={item.image}
             title={item.title}
             subTitle={item.description}
+            showChevron={true}
             onPress={() => console.log("pressed", item)}
             renderRightActions={() => (
               <ListItemDeleteAction onPress={() => handleDelete(item)} />

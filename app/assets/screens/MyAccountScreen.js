@@ -103,34 +103,6 @@ const MyAccountScreen = () => {
           <AppText style={styles.lightText}>umarabanga78@gmail.com</AppText>
         </View>
       </View>
-      {/* <Icon
-        style={[styles.listingIcon, { backgroundColor: colors.primary }]}
-        name="format-list-bulleted"
-        color="white"
-        size={25}
-        topStyle={styles.listing}
-        text="My Listings"
-        textStyle={styles.text}
-      />
-      <Icon
-        style={[styles.listingIcon, { backgroundColor: colors.secondary }]}
-        name="email"
-        color="white"
-        size={25}
-        topStyle={styles.listing}
-        text="My Messages"
-        textStyle={styles.text}
-      />
-      <Icon
-        style={[styles.listingIcon, { backgroundColor: colors.secondary }]}
-        name="logout"
-        color="white"
-        size={25}
-        topStyle={[styles.listing, { marginTop: 20 }]}
-        text="Logout"
-        textStyle={styles.text}
-      /> */}
-
       <FlatList
         data={data}
         keyExtractor={(list) => list.id.toString()}

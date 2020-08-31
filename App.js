@@ -1,35 +1,20 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
-import {
-  StyleSheet,
-  View,
-  SafeAreaView,
-  Platform,
-  Text,
-  Image,
-  Alert,
-} from "react-native";
+import React, { useState } from "react";
+import { Formik } from "formik";
+import { StyleSheet } from "react-native";
 import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-
-import AppText from "./app/component/app-text";
-import LoginButton from "./app/component/button";
-import WelcomeScreen from "./app/assets/screens/WelcomScreen";
-import Card from "./app/component/card";
-import ListDetailsScreen from "./app/assets/screens/ListDetailsScreen";
-import ViewImageScreen from "./app/assets/screens/ViewImageScreen";
+import LoginScreen from "./app/assets/screens/LoginScreen";
+import RegisterScreen from "./app/assets/screens/register-screen";
+import AppFormPicker from "./app/component/app-form-picker";
+import ListingEditScreen from "./app/assets/screens/listing-edit-screen";
 import MessagesScreen from "./app/assets/screens/MessagesScreen";
-import MyAccountScreen from "./app/assets/screens/MyAccountScreen";
 
 export default function App() {
-  const onPress = () => {
-    Alert.alert("Button pressed");
-  };
-  const { landscape } = useDeviceOrientation();
-  return <MyAccountScreen />;
+  return <ListingEditScreen />;
 }
 
 const styles = StyleSheet.create({

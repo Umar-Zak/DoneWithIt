@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity, Platform } from "react-native";
 import colors from "../config/colors";
-const LoginButton = ({ title, onPress, color = "primary" }) => {
+const LoginButton = ({ title, onPress, color = "primary", style }) => {
   return (
     <TouchableOpacity
-      style={[styles.container, { backgroundColor: colors[color] }]}
+      style={[styles.container, { backgroundColor: colors[color], style }]}
       onPress={onPress}
     >
       <Text style={styles.text}>{title}</Text>
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
   },
   container: {
-    width: "90%",
+    width: "95%",
     height: 50,
     backgroundColor: colors.primary,
     justifyContent: "center",

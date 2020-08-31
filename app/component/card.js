@@ -5,7 +5,7 @@ import AppText from "./app-text";
 import colors from "../config/colors";
 const Card = ({ title, subTitle, image }) => {
   return (
-    <View>
+    <View style={styles.card}>
       <Image style={styles.image} source={image} />
       <View style={styles.textContainer}>
         <AppText style={styles.title}>{title}</AppText>
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: "white",
     marginBottom: 20,
+    padding: 20,
   },
   image: {
     width: "100%",

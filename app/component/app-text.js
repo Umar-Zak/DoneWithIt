@@ -1,9 +1,14 @@
 import React from "react";
 
 import { Text, StyleSheet, Platform } from "react-native";
+import colors from "../config/colors";
 
-const AppText = ({ children, style }) => {
-  return <Text style={[styles.text, style]}>{children}</Text>;
+const AppText = ({ children, style, ...otherProps }) => {
+  return (
+    <Text style={[styles.text, style]} {...otherProps}>
+      {children}
+    </Text>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -11,11 +16,11 @@ const styles = StyleSheet.create({
     ...Platform.select({
       ios: {
         fontFamily: "Avenir",
-        color: "dodgerblue",
+        color: colors.medium,
       },
       android: {
         fontFamily: "Roboto",
-        color: "tomato",
+        color: colors.medium,
         textAlign: "center",
       },
     }),
