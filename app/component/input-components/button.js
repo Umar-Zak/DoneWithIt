@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity, Platform } from "react-native";
-import colors from "../config/colors";
+import colors from "../../config/colors";
 const LoginButton = ({ title, onPress, color = "primary", style }) => {
   return (
     <TouchableOpacity

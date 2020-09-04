@@ -8,7 +8,7 @@ import {
   StatusBar,
   Platform,
 } from "react-native";
-import LoginButton from "../../component/button";
+import LoginButton from "../../component/input-components/button";
 
 const WelcomeScreen = () => {
   return (

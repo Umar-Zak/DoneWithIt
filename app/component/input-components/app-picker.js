@@ -8,11 +8,11 @@ import {
   Button,
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import colors from "../config/colors";
-import style from "../config/styles";
-import AppText from "./app-text";
-import Screen from "./screen";
-import PickerItem from "./picker-item";
+import colors from "../../config/colors";
+import style from "../../config/styles";
+import AppText from "../app-text";
+import Screen from "../screen";
+import PickerItem from "../picker-item";
 
 const AppPicker = ({
   icon,
